@@ -1,0 +1,17 @@
+{
+    "owner_name": "First [Middle] Last",
+    "owner_email": "{{ cookiecutter.owner_name.lower().replace(' ', '.') ~ '@github.com' }}",
+    "owner_username": "{{ cookiecutter.owner_name.lower().replace(' ', '') }}",
+    "project_name": "project_name",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_description": "Enter your project short description.",
+    "coverage_badge_gist_id": "The id to the coverage badge gist for the repository.",
+    "__prompts__": {
+        "owner_name": "Enter the repository owner's full name",
+        "owner_email": "Enter the repository owner's email address",
+        "owner_username": "Enter the repository owner's GitHub user name",
+        "project_name": "Enter the project name (lowercase, no spaces, hyphens or underscores)",
+        "project_slug": "Enter the package name (lowercase, no spaces, underscores only)",
+        "project_description": "Enter the short description for the project (one sentence)"
+    }
+}
